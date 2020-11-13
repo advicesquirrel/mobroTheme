@@ -1,0 +1,54 @@
+html{
+}
+body{
+    background-image: url(MoBro_background_green_black.png);
+	background-color: #000;
+	background-size: 100% 100%;
+    overflow: hidden;
+    color: #fff;
+}
+.cont{
+	height: 100%;
+	padding: 1%;
+}
+#BoxGPU{
+	height: 50%;
+}
+#BoxCPU{
+	height: 50%;
+}
+.box{
+	height: 100%;
+	padding: 0.5%;
+}
+.boxLeft{
+	width: 75%;
+}
+.boxRight{
+	width: 25%;
+	text-align: center;
+}
+.title{
+	font-family: 'unispaceregular' !important;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.titlebox{
+	width: 100%;
+	background-color: #808080;
+	height: 35px;
+	padding: 5px;
+}
+.chart-wrapper{
+	height: 10%;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+.border{
+	border: 1px solid grey;
+	background-color: #000;
+}

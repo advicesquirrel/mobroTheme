@@ -1,0 +1,89 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>advicesquirrel mobro theme</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="./dist/css/dist/bootstrap.css">
+	<link rel="stylesheet" href="./dist/css/style.css">
+	<link rel="stylesheet" href="./dist/css/unispace/font.css">
+</head>
+<body>
+	<div class="cont">
+		<div id="BoxGPU">
+			<div class="box boxLeft left">
+				<div class="titlebox">
+					<span class="title left">GPU Usage</span>
+					<span class="title right">
+						<span id="gpu-current-load"></span>
+						<span>%</span>
+					</span>
+				</div>
+				<br />
+				<div class="chart-wrapper">
+					<canvas id="gpu-chart-bar" class="border"></canvas>
+				</div>
+				<br />
+				<div class="titlebox">
+					<span class="title left">VRAM</span>
+					<span class="title right">
+						<span id="mobro-vram-data"></span>GB /
+						<span id="mobro-vram-data-total"></span>
+					</span>
+				</div>
+				<br />
+				<div class="chart-wrapper">
+					<canvas id="vram-chart-bar" class="border"></canvas>
+				</div>
+			</div>
+			<div class="box boxRight right">
+				<div class="titlebox">
+					<span class="title">GPU TEMP</span>
+				</div>
+				<div class="chart-wrapper">
+					<canvas id="gpu-chart-doughnut" data-border="margins" width="100%" height="100%" data-name="" data-unit="°C"></canvas>
+				</div>
+			</div>
+		</div>
+		<div id="BoxCPU">
+			<div class="box boxLeft left">
+				<div class="titlebox">
+					<span class="title left">CPU Usage</span>
+					<span class="title right">
+						<span id="cpu-current-load"></span>
+						<span>%</span>
+					</span>
+				</div>
+				<br />
+				<div class="chart-wrapper">
+					<canvas id="cpu-chart-bar" class="border"></canvas>
+				</div>
+				<br />
+				<div class="titlebox">
+					<span class="title left">RAM</span>
+					<span class="title right">
+						<span id="mobro-ram-data--used"></span> /
+						<span id="mobro-ram-data--total"></span>
+					</span>
+				</div>
+				<br />
+				<div class="chart-wrapper">
+					<canvas id="ram-chart-bar" class="border"></canvas>
+				</div>
+			</div>
+			<div class="box boxRight right">
+				<div class="titlebox">
+					<span class="title">CPU TEMP</span>
+				</div>
+				<div class="chart-wrapper">
+                    <canvas id="cpu-chart-doughnut" data-border="margins" width="100%" height="100%" data-name="" data-unit="°C"></canvas>
+                </div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script src="sdk.js"></script>
+<script src="./dist/script.js"></script>
